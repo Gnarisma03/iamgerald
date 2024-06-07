@@ -246,7 +246,7 @@ main {
 @media(max-width: 600px){
 
     
-    .home-container, .about-container, .project-container{
+    .home-container, .about-container, .project-box-container{
        text-align: center;
        place-items: center;
        grid-template-columns:  repeat(1, 1fr);
