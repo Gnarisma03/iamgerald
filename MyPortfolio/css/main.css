@@ -185,6 +185,8 @@ main {
     background: #fff;
     text-align: center;
     padding:30px 20px;
+    width: 100%;
+
 }
 .project-container .project-box-container .box h3{
     color:#131518;
