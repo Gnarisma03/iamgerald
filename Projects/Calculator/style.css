@@ -78,3 +78,69 @@ button:hover {
     transform: scale(1.2) translateY(-10px);
     color:#0369a1;
 }
+
+@media only screen and (max-width: 600px){
+    #calculator {
+        border-radius:15px;
+        max-width:350px;
+        overflow: hidden; 
+    }
+    button {
+    width:65px;
+    height:65px;
+    font-size:20px;
+    }
+
+    #display{
+        width:100%;
+        padding:20px;
+        font-size: 3rem;
+        text-align: left;
+        border: none;
+        background: #576980;  
+        color: #fff;  
+    }
+}
+
+@media only screen and (max-width: 384px){
+    #calculator {
+    border-radius:15px;
+    max-width:300px;
+    overflow: hidden; 
+    }
+    button {
+    width:55px;
+    height:55px;
+    font-size:15px;
+    }
+
+    #display{
+        width:100%;
+        padding:20px;
+        margin-bottom:-10px;
+        font-size: 2rem;
+        text-align: left;
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 272px){
+    #calculator {
+    max-width:250px;
+    overflow: hidden; 
+    }
+    button {
+    width:45px;
+    height:45px;
+    font-size:10px;
+    }
+
+    #display{
+        width:100%;
+        padding:20px;
+        margin-bottom:-10px;
+        font-size: 1.5rem;
+        text-align: left;
+        border: none;
+    }
+}
