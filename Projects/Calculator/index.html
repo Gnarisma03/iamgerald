@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+    <div id="calculator">
+
+        <input type="text" id="display" readonly>
+        <div id="keys">
+        
+        <button onclick="displayNum('9')">9</button>
+        <button onclick="displayNum('8')">8</button>
+        <button onclick="displayNum('7')">7</button>
+        <button class="clear-btn" onclick="clearDisplay()">C</button>
+        <button onclick="displayNum('6')">6</button>
+        <button onclick="displayNum('5')">5</button>
+        <button onclick="displayNum('4')">4</button>
+        <button onclick="displayNum('+')">+</button>
+        <button onclick="displayNum('3')">3</button>
+        <button onclick="displayNum('2')">2</button>
+        <button onclick="displayNum('1')">1</button>
+        <button onclick="displayNum('-')">-</button>
+        <button onclick="displayNum('*')">*</button>
+        <button onclick="displayNum('0')">0</button>
+        <button onclick="displayNum('.')">.</button>
+        
+        <button class="equals" onclick="calculate()">=</button>
+    </div>
+</div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">  <a href="">&copy; 2024 Gerald Narisma | All Rights Reserved</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
