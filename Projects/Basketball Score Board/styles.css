@@ -177,242 +177,17 @@ button {
     position: relative;
 }
 
-@media only screen and (max-width: 1629px), (max-height: 900px){
-    h1 {
-        font-size:5rem;
-        margin-top: 20px;
-        font-weight: 500;
-    }
-    h2 {
-        font-size:3 rem;
-        margin-top: 30px;
-        
-    }  
-    p {
-        font-size: 23px;
-    }
-    #shotClock_count{
-        font-size:80px;
-    }
-    .box7, .box9 {
-        font-size: 23px;
-    }
-    img {
-        height:80px;
-        width: 70px;
-    
-    }
-    .pts {
-        font-size: 9.5em;
-        left:20%;
-        margin-top:35px; 
-    }
-    .pts-shadow {
-        font-size: 9.5em;
-        z-index: 1;
-        top: 19%;
-        color: black;
-        margin-left: 5.5%;
-    }
 
-}
-
-@media only screen and (max-width: 1085px), (max-height: 900px){
+@media only screen and (max-width: 600px), (max-height: 900px){
     .scoreboard {
-        width: 92%;
-    }
-    h1 {
-        font-size:5rem;
-        margin-top: 20px;
-        font-weight: 500;
-    }
-    h2 {
-        font-size:3 rem;
-        margin-top: 30px;
-        
-    }  
-    p {
-        font-size: 23px;
-    }
-    #shotClock_count{
-        font-size:80px;
-    }
-    .box7, .box9 {
-        font-size: 23px;
-    }
-    img {
-        height:80px;
-        width: 70px;
-    
-    }
-    .pts {
-        font-size: 9.5em;
-        left:20%;
-        margin-top:35px; 
-    }
-    .pts-shadow {
-        font-size: 9.5em;
-        z-index: 1;
-        top: 19%;
-        color: black;
-        margin-left:6.5%;
-    }
-
-}
-
-
-@media only screen and (max-width: 785px), (max-height: 900px){
-    .scoreboard {
-        width: 91%;
+        width: 100%;
         height:100%;
     }
     #shotClock_count{
-        font-size:70px;
+        font-size:21px;
     }
     p {
-        font-size: 20px;
-    }
-    
-    img {
-        height:65px;
-        width: 55px;
-    
-    }
-
-    .box7, .box9 {
-        font-size: 21px;
-    }
-    h1 {
-        font-size:4rem;
-        margin-top: 25px;
-        font-weight: 500;
-    }
-    h2 {
-        font-size:2rem;
-        margin-top: 30px;
-        
-    }  
-
-    .pts {
-        font-size: 9.5em;
-        left:32%;
-        margin-top:45px; 
-    }
-    .pts-shadow {
-        font-size: 9.5em;
-        z-index: 1;
-        top: 19%;
-        color: black;
-        margin-left:6.5%;
-    }
-
-}
-
-@media only screen and (max-width: 713px), (max-height: 900px){
-    .scoreboard {
-        width: 91%;
-        height:100%;
-    }
-    #shotClock_count{
-        font-size:50px;
-    }
-    p {
-        font-size: 18px;
-    }
-    
-    img {
-        height:50px;
-        width: 40px;
-    
-    }
-
-    .box7, .box9 {
-        font-size: 18px;
-    }
-    h1 {
-        font-size:3rem;
-        margin-top: 25px;
-        font-weight: 500;
-    }
-    h2 {
-        font-size:1.5rem;
-        margin-top: 30px;
-        
-    }  
-
-    .pts {
-        font-size: 8em;
-        left:32%;
-        margin-top:35px; 
-    }
-    .pts-shadow {
-        font-size: 8em;
-        z-index: 1;
-        top: 16.5%;
-        color: black;
-        margin-left: 8%;
-    }
-
-}
-
-
-@media only screen and (max-width: 607px), (max-height: 900px){
-    .scoreboard {
-        width: 91%;
-        height:100%;
-    }
-    #shotClock_count{
-        font-size:40px;
-    }
-    p {
-        font-size: 15px;
-    }
-    
-    img {
-        height:40px;
-        width: 30px;
-    
-    }
-
-    .box7, .box9 {
-        font-size: 15px;
-    }
-    h1 {
-        font-size:2.5rem;
-        margin-top: 25px;
-        font-weight: 500;
-    }
-    h2 {
-        font-size:1rem;
-        margin-top: 30px;
-        
-    }  
-
-    .pts {
-        font-size: 7em;
-        left:32%;
-        margin-top:25px; 
-    }
-    .pts-shadow {
-        font-size: 7em;
-        z-index: 1;
-        top: 13.5%;
-        color: black;
-        margin-left: 7%;
-    }
-
-}
-
-@media only screen and (max-width: 607px), (max-height: 900px){
-    .scoreboard {
-        width: 91%;
-        height:100%;
-    }
-    #shotClock_count{
-        font-size:25px;
-    }
-    p {
-        font-size: 12px;
+        font-size: 10px;
     }
     
     img {
@@ -422,28 +197,28 @@ button {
     }
 
     .box7, .box9 {
-        font-size: 12px;
+        font-size: 10px;
     }
     h1 {
-        font-size:2rem;
-        margin-top: 25px;
+        font-size:1.5rem;
+        margin-top: 20px;
         font-weight: 500;
     }
     h2 {
         font-size:1rem;
-        margin-top: 25px;
+        margin-top: 20px;
         
     }  
 
     .pts {
-        font-size: 6em;
-        left:35%;
+        font-size: 4em;
+        left:30%;
         margin-top:20px; 
     }
     .pts-shadow {
-        font-size: 6em;
+        font-size: 4em;
         z-index: 1;
-        top: 12%;
+        top: 10.5%;
         color: black;
         margin-left: 7%;
     }
