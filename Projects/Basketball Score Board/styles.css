@@ -178,52 +178,49 @@ button {
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 320px){
     .scoreboard {
         width: 100%;
-        height:100%;
-    }
-    #shotClock_count{
-        font-size:21px;
-    }
-    p {
-        font-size: 10px;
-    }
-    
-    img {
-        height:20px;
-        width: 15px;
-    
-    }
+        height: 100%;}
 
-    .box7, .box9 {
-        font-size: 10px;
+    #shotClock_count{
+        color:red;
+        font-size:2rem;
     }
     h1 {
-        font-size:1.5rem;
-        margin-top: 20px;
-        font-weight: 500;
+        font-size:2rem;
+        font-weight: 550;
+
     }
     h2 {
         font-size:1rem;
-        margin-top: 20px;
+        margin-top: 25px;
         
-    }  
-
+    }
+    
+    p {
+        font-size: 10px;
+    }.box7, .box9 {
+        font-size: 10px;
+        gap:30px;
+    }
+    img {
+        height:30px;
+        width: 25px;
+    }
     .pts {
         font-size: 4em;
-        left:30%;
-        margin-top:20px; 
+        left:32%;
+        margin-top:40px;
+    
     }
     .pts-shadow {
         font-size: 4em;
         z-index: 1;
-        top: 10.5%;
-        color: black;
-        margin-left: 7%;
+        top: 14.5%;
+        margin-left: 4%;
     }
-
-}
+}   
 
 
 
