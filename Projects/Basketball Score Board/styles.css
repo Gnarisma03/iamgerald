@@ -177,6 +177,51 @@ button {
     position: relative;
 }
 
+@media only screen and (max-width: 641px){
+    .scoreboard {
+        width: 97%;
+        height: 100%;}
+
+    #shotClock_count{
+        color:red;
+        font-size:4rem;
+    }
+    h1 {
+        font-size:3rem;
+        font-weight: 550;
+        margin-top: 20px;
+
+    }
+    h2 {
+        font-size:2rem;
+        margin-top: 25px;
+        
+    }
+    
+    p {
+        font-size: 20px;
+    }.box7, .box9 {
+        font-size: 20px;
+        gap:30px;
+    }
+    img {
+        height:45px;
+        width: 40px;
+    }
+    .pts {
+        font-size: 7em;
+        left:30%;
+        margin-top:42px;
+    
+    }
+    .pts-shadow {
+        font-size: 7em;
+        z-index: 1;
+        top: 16%;
+        margin-left: 9%;
+    }
+}
+
 @media only screen and (max-width: 481px){ 
     .scoreboard {
         width: 100%;
@@ -352,7 +397,7 @@ button {
 }   
 
 
-@media only screen and (max-width: 641px){ }
+
 @media only screen and (max-width: 961px){ }
 @media only screen and (max-width: 1025x){ }
 @media only screen and (max-width: 1281px){ }
