@@ -16,6 +16,13 @@ body{
     
 }
 
+.warning {
+    color:red;  
+    font-size: 20px;
+    text-align: center;
+    display:none;
+}
+
 h1 {
     font-size:5.4rem;
     font-family: 'Digital Display',monospace;
@@ -24,7 +31,6 @@ h1 {
     align-items: center;
     margin-top: 25px;
     font-weight: 550;
-    text-transform: uppercase;
 }
 h2 {
     font-size:2.5rem;
@@ -32,7 +38,15 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
+    text-transform: uppercase;
     
+}
+
+.input {
+    background-color: white;
+    width:11rem;
+    border-radius: 8px;
+    color:rgb(0, 0, 0);
 }
 
 p {
@@ -67,9 +81,12 @@ p {
     width: 1000px;
 }
 .lower-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
     height: 100%;
-    width: 1200px;
+    width: 1150px;
  
 }
 .scoreboard {
@@ -155,11 +172,14 @@ button {
     border-left: solid 1px #d4eaff;
     border-bottom: solid 1px #d4eaff;
   }
+  .btn .circular {
+    border-radius: 50em !important;
+  }
   button {
-    border-radius: 1px;
+    border-radius: px;
+    padding: 1px 1px;
     color: #000000;
     background-color: #7abedf;
-    display: inline-block;
     background: #d4eaff;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
@@ -167,16 +187,11 @@ button {
     transition: 0.3s;
     font-family: sans-serif;
     font-weight: 800;
-    font-size: .85em;
+    font-size: 1em;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
-    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
-    position: relative;
 }
-
 
 @media only screen and (max-width: 1281px){ }
 @media only screen and (max-width: 1025x){ 
@@ -188,12 +203,14 @@ button {
         width: 100%;
     
     }
+
     .pts-shadow {
         font-size: 10em;
         top: 19%;
         margin-left: 1%;
         width: 100%;
     }
+    
 }
 
 @media only screen and (max-width: 961px){
@@ -227,6 +244,12 @@ button {
  }
 
 @media only screen and (max-width: 641px){
+    .lower-section{
+        display:none;
+     }
+     .warning {
+        display:block;
+    }
     .scoreboard {
         width: 97%;
         height: 100%;}
@@ -270,6 +293,71 @@ button {
         margin-left: 9%;
     }
 }
+  
+    .board {
+        width: 80%;
+        height: 30vh;
+        background-color: rgb(22, 22, 22);;
+        border: 7px solid rgb(145, 145, 145);
+        outline: 10px solid rgb(212, 211, 211);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+    }
+
+    .board-box1 {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:5px;
+
+    } 
+.board-box2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    
+}
+.board-box3 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+
+} 
+footer {
+    position: relative;
+    padding: 1px 20px;
+    margin-top:50px;
+    padding: 1rem;
+}
+
+.footer .copyright{
+    text-align: center;
+    font-size: 14px;
+    color: #4b5563;
+
+}
+.footer a:hover{
+    transform: scale(1.2) translateY(-10px);
+    color:#0369a1;
+}
+.btn:hover, .btn:focus {
+    opacity: 0.8;
+}
+.btn:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
 
 @media only screen and (max-width: 481px){ 
     .scoreboard {
@@ -284,12 +372,14 @@ button {
         font-size:2.5rem;
         font-weight: 550;
         margin-top: 20px;
+        
 
     }
     h2 {
         font-size:1.5rem;
         margin-top: 20px;
-        
+
+      
     }
     
     p {
@@ -403,8 +493,8 @@ button {
 }   
 @media only screen and (max-width: 320px){
     .scoreboard {
-        width: 98%;}
-
+        width: 93%;
+        height:100%;}
     #shotClock_count{
         color:red;
         font-size:2rem;
