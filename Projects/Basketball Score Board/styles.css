@@ -496,7 +496,6 @@ footer {
         width: 93%;
         height:100%;}
     #shotClock_count{
-        color:red;
         font-size:2rem;
     }
     h1 {
@@ -521,15 +520,15 @@ footer {
         width: 25px;
     }
     .pts {
-        font-size: 4.5em;
+        font-size: 4em;
         left:34%;
         margin-top:40px;
     
     }
     .pts-shadow {
-        font-size: 4.5em;
+        font-size: 4em;
         z-index: 1;
-        top: 13%;
+        top: 14.5%;
         margin-left: 4%;
     }
 }   
