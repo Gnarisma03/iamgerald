@@ -177,6 +177,55 @@ button {
     position: relative;
 }
 
+
+@media only screen and (max-width: 1281px){ }
+@media only screen and (max-width: 1025x){ 
+    .pts {
+        font-size: 10em;
+
+        left:20%;
+        margin-top:40px;
+        width: 100%;
+    
+    }
+    .pts-shadow {
+        font-size: 10em;
+        top: 19%;
+        margin-left: 1%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 961px){
+    .scoreboard {
+        width: 97%;
+    }
+    .pts {
+        font-family: 'Digital Display',monospace;
+        font-size: 10em;
+        text-align: end;
+        position: relative;
+        z-index: 2;
+        display:flex;
+        justify-content: center;
+        left:20%;
+        margin-top:40px;
+        color: rgb(243, 243, 87);
+        width: 100%;
+    
+    }
+    .pts-shadow {
+        font-family: 'Digital Display',monospace;
+        font-size: 10em;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+        top: 19%;
+        color: black;
+        margin-left: 4.5%;
+    }
+ }
+
 @media only screen and (max-width: 641px){
     .scoreboard {
         width: 97%;
@@ -354,8 +403,7 @@ button {
 }   
 @media only screen and (max-width: 320px){
     .scoreboard {
-        width: 98%;
-        height: 100%;}
+        width: 98%;}
 
     #shotClock_count{
         color:red;
@@ -396,11 +444,6 @@ button {
     }
 }   
 
-
-
-@media only screen and (max-width: 961px){ }
-@media only screen and (max-width: 1025x){ }
-@media only screen and (max-width: 1281px){ }
 
 
 
