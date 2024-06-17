@@ -234,13 +234,13 @@ function resetShotClock14() {
     function rightArrow(){
        var rightArrow = document.getElementById('right-arrow')
         var leftArrow = document.getElementById('left-arrow')
-        rightArrow.style.display = "block";
-        leftArrow.style.display = "none";
+        rightArrow.style.opacity = "1";
+        leftArrow.style.opacity = "0.1";
     }
     function leftArrow(){
         var rightArrow = document.getElementById('right-arrow')
         var leftArrow = document.getElementById('left-arrow')
         document.getElementById('left-arrow')
-        rightArrow.style.display = "none";
-        leftArrow.style.display = "block";
+        rightArrow.style.opacity = "0.1";
+        leftArrow.style.opacity = "1";
     }
