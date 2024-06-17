@@ -1,109 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Basketball Score Board</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="reset.css">
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Basketball Scoreboard</title>
+</head>
 <body>
     <section class="upper-section">
         <div class="upper-container">
-        <div class="scoreboard">
-            <div class="box box1">
-                <h2 id="team1-name">TEAM 1</h2>
-            </div>
-            <div class="box box2">
-                <h1 id="timer_count">10:00</h1>
-            </div>
-            <div class="box box3">
-                <h2 id="team2-name">TEAM 2</h2>
-            </div>
-            <div class="box box4">
-                <div class="one">
-                    <p class="pts" id="team1-pts">0</p>
-                    <p class="pts-shadow">000</p> <br><br>
+            <div class="scoreboard">
+                <div class="box box1">
+                    <h2 id="team1-name">TEAM 1</h2>
+                </div>
+                <div class="box box2">
+                    <h1 id="timer_count">10:00</h1>
+                </div>
+                <div class="box box3">
+                    <h2 id="team2-name">TEAM 2</h2>
+                </div>
+                <div class="box box4">
+                    <div class="one">
+                        <p class="pts" id="team1-pts">0</p>
+    
+                </div>
+                </div>
+                <div class="box box5">
+                    <p>Shot Clock<br><span id="shotClock_count">24</span></p>
+                            <br><p>Period<br><span id="period">0</span></p><br> 
+                            <p>Ball Pos</p>
+                </div>
+                <div class="box box6">
+                    <div class="one">
+                        <p class="pts" id="team2-pts">0</p>
+                    </div>
+                </div>
+                <div class="box box7">
 
-            </div>
-            </div>
-            <div class="box box5">
-                <p>Shot Clock<br><span id="shotClock_count">24</span></p>
-                        <br><p>Period<br><span id="period">0</span></p><br> 
-                        <p>Ball Pos</p>
-            </div>
-            <div class="box box6">
-                <div class="one">
-                    <p class="pts" id="team2-pts">0</p>
-                    <p class="pts-shadow">000</p>
+                    <h3>Time Out<br><span id="team1TO">0</span></h3>
+                   <h3>Team Fouls<br> <span id="team1TF">0</span></h3>
+                </div>
+                <div class="box box8">
+                    <img id="left-arrow" src="./image/left-arrow.png" alt="left arrow">
+                    <img id="right-arrow" src="./image/right-arrow.png"  alt="right arrow">
+                </div>
+                <div class="box box9">
+                    <h3>Time Out<br><span id="team2TO">0</span></h3>
+                    <h3>Team Fouls<br> <span id="team2TF">0</span></h3>
+    
+                </div>
                 </div>
             </div>
-            <div class="box box7">
+    </section>
 
-                        <h3>Time Out<br><span id="team1TO">0</span></h3>
-                       <h3>Team Fouls<br> <span id="team1TF">0</span></h3>
+    <section class="lower-section">
+        <div class="board">
+            <div class="board-box1">
+                <h4>Team 1 Board</h4>
+                <button onclick="t1SetName()">Set Team 1 Name</button>
+                <input class="input"type='text' id='t1name' maxlength="15"/>
+                <h4>Team 1 Scores
+                <button id="three-pts" onclick="team1AddPoints3()">+3</button>
+                <button id="two-pts" onclick="team1AddPoints2()">+2</button>
+                <button id="one-pt" onclick="team1AddPoints1()">+1</button>
+                <button id="minus-pts" onclick="team1MinusPoints()">-1</button>
+                <button id="reset-pts" onclick="team1ResetPoints()">RESET</button>
+            </h4>
+                <h4>Time Out: <button onclick="team1TimeOutMinus()">-1</button> <button class="plusTOt1" onclick="team1TimeOutAdd()">+1</button></h4>
+                <h4>Team Fouls: <button onclick="team1TFMinus()">-1</button> <button onclick="team1TFAdd() ">+1</button></h4>
             </div>
-            <div class="box box8">
-                <img id="left-arrow" src="./image/left-arrow.png" alt="left arrow">
-                <img id="right-arrow" src="./image/right-arrow.png"  alt="right arrow">
-            </div>
-            <div class="box box9">
-                <h3>Time Out<br><span id="team2TO">0</span></h3>
-                <h3>Team Fouls<br> <span id="team2TF">0</span></h3>
-
-            </div>
-            </div>
+            <div class="board-box2">
+                <button class="btn" id="startGame" onclick="startGame()">New Game</button>
+                <button class="btn" id="start_timer" onclick="startTimer()">Start </button>
+                <button class="btn" id="pause_timer" onclick="pauseTimer()">Pause</button>
+                <h4>Period <button class="btn" id="" onclick="addPeriod()">+1</button> <button class="btn" id="" onclick="minusPeriod()">-1</button></h4>
+                <h4>Ball/Arrow Possesion: <button class="btn" id="left-arrow-btn" onclick="leftArrow()"> <</button> 
+                <button class="btn" id="right-arrow-btn" onclick="rightArrow()"> ></button></h4>
+                <h4>Shot Clock:</h4>
+                <h3><button class="btn" id="start_shotClock" onclick="startShotClock()">Start</button> - <button class="btn" id="reset_shotClock" onclick="resetShotClock()">24</button></h3>
+                 <h3><button class="btn" id="pause_shotClock" onclick="pauseShotClock()">Pause</button> - <button class="btn" id="reset_shotClock" onclick="resetShotClock14()">14</button>
         </div>
-    </section><br>
-              <h3 class="warning">use a big device like desktop,laptop to utitlize the board function</h3>
-        <section class="lower-section">
-            <div class="lower-container">
-                <div class="board">
-                    <div class="board-box1">
-                        <h4>Team 1 Board</h4>
-                        <button onclick="t1SetName()">Set Team 1 Name</button>
-                        <input class="input"type='text' id='t1name' maxlength="15"/>
-                        <h4>Team 1 Scores
-                        <button id="three-pts" onclick="team1AddPoints3()">+3</button>
-                        <button id="two-pts" onclick="team1AddPoints2()">+2</button>
-                        <button id="one-pt" onclick="team1AddPoints1()">+1</button>
-                        <button id="minus-pts" onclick="team1MinusPoints()">-1</button>
-                        <button id="reset-pts" onclick="team1ResetPoints()">RESET</button>
-                    </h4>
-                        <h4>Time Out: <button onclick="team1TimeOutMinus()">-1</button><button class="plusTOt1" onclick="team1TimeOutAdd()">+1</button></h4>
-                        <h4>Team Fouls: <button onclick="team1TFMinus()">-1</button><button onclick="team1TFAdd() ">+1</button></h4>
-                    </div>
-                    <div class="board-box2">
-                        <button class="btn" id="startGame" onclick="startGame()">New Game</button>
-                        <button class="btn" id="start_timer" onclick="startTimer()">Start </button>
-                        <button class="btn" id="pause_timer" onclick="pauseTimer()">Pause</button>
-                        <h4>Period <button class="btn" id="" onclick="addPeriod()">+1</button><button class="btn" id="" onclick="minusPeriod()">-1</button></h4>
-                        <h4>Ball/Arrow Possesion: <button class="btn" id="left-arrow-btn" onclick="leftArrow()"> <</button> 
-                        <button class="btn" id="right-arrow-btn" onclick="rightArrow()"> ></button></h4>
-                        <h4>Shot Clock:</h4>
-                        <h3><button class="btn" id="start_shotClock" onclick="startShotClock()">Start</button> - <button class="btn" id="reset_shotClock" onclick="resetShotClock()">24</button></h3>
-                         <h3><button class="btn" id="pause_shotClock" onclick="pauseShotClock()">Pause</button> - <button class="btn" id="reset_shotClock" onclick="resetShotClock14()">14</button>
-                </div>
-                   <div class="board-box3">
-                        <h4>Team 2 Board</h4>
-                        <button onclick="t2SetName()">Set Team 1 Name</button>
-                        <input class="input" type='text' id='t2name' maxlength="15"/>
-                        <h4>Team 2 Scores
-                        <button id="three-pts" onclick="team2AddPoints3()">+3</button>
-                        <button id="two-pts" onclick="team2AddPoints2()">+2</button>
-                        <button id="one-pt" onclick="team2AddPoints1()">+1</button>
-                        <button id="minus-pts" onclick="team2MinusPoints()">-1</button>
-                        <button id="reset-pts" onclick="team2ResetPoints()">RESET</button>
-                    </h4>
-                        <h4>Time Out: <button onclick="team2TimeOutMinus()">-1</button><button class="plusTOt2" onclick="team2TimeOutAdd()">+1</button></h4>
-                        <h4>Team Fouls: <button onclick="team2TFMinus()">-1</button><button onclick="team2TFAdd() ">+1</button></h4>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <script src="script.js"></script>
+        <div class="board-box3">
+            <h4>Team 2 Board</h4>
+            <button onclick="t2SetName()">Set Team 1 Name</button>
+            <input class="input" type='text' id='t2name' maxlength="15"/>
+            <h4>Team 2 Scores
+            <button id="three-pts" onclick="team2AddPoints3()">+3</button>
+            <button id="two-pts" onclick="team2AddPoints2()">+2</button>
+            <button id="one-pt" onclick="team2AddPoints1()">+1</button>
+            <button id="minus-pts" onclick="team2MinusPoints()">-1</button>
+            <button id="reset-pts" onclick="team2ResetPoints()">RESET</button>
+        </h4>
+            <h4>Time Out: <button onclick="team2TimeOutMinus()">-1</button> <button class="plusTOt2" onclick="team2TimeOutAdd()">+1</button></h4>
+            <h4>Team Fouls: <button onclick="team2TFMinus()">-1</button> <button onclick="team2TFAdd() ">+1</button></h4>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
