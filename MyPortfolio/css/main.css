@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
 
+:root {
+    --color-1: #f8fafc;
+    --text-color: #4b5563;
+    --hover:#0369a1;
+}
 *{
 
     font-family: 'Poppins', sans-serif;
@@ -34,19 +39,10 @@ p {
     margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
 }
-main {
-    padding-top:8rem;
-    width:100%;
-    height: auto;
-    background-color: #f8fafc;
-}
-
-
-/** Home Section starts here **/
-
 .home-container{
     max-width: 1200px;
     margin:auto;
+    margin-top: 6rem;
     padding: 1rem;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -65,7 +61,7 @@ main {
 .home-container-img img{
     width: max(70%);
     border-radius: 100%;
-    box-shadow: 0 0 10px #4b5563;
+    box-shadow: 0 0 10px var(--text-color);
 }
 .home-container-content-name{
     
@@ -77,8 +73,6 @@ main {
     color: #575757;
     margin-bottom: 2rem;
 }
-
-
 .btn-box {
     display:flex;
     justify-content: flex-start;
@@ -133,10 +127,6 @@ main {
   .btn.btn-2:focus {
    color:#f8fafc;
   }
-
-  /** Home Section ends here **/
-
-
   /** About Section starts here **/
 
   .about-container{
@@ -158,9 +148,7 @@ main {
 
   /** About Section ends here **/
 
-  /** Project Section Starts here **/
-
-.project-container{
+  .project-container{
     min-height: auto;
     max-width: 1200px;
     margin:auto;
@@ -181,7 +169,7 @@ main {
 
   .project-container .project-box-container .box{
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
-    border-radius: 5px;
+    border-radius: 10px;
     background: #fff;
     text-align: center;
     padding:30px 20px;
@@ -193,6 +181,7 @@ main {
     font-size: 20px;
     line-height: 2;
 }
+
 .project-container .project-box-container .box p{
     color:#777;
     font-size: 15px;
@@ -210,11 +199,9 @@ main {
 
 }
 
-.project-img img {
-    width: max(70%);
-    border-radius: 100%;
+.box ul li {
+    display:inline-block;
 }
-
 .box ul li {
     display:inline-block;
 }
@@ -232,33 +219,6 @@ main {
     align-items: center;
 
 }
-
-::-webkit-scrollbar{
-    width: 15px;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #0369a1;
-}
-::-webkit-scrollbar-track{
-    background-color: #4b5563;
-    width: 50px;
-}
-
-@media(max-width: 600px){
-
-    
-    .home-container, .about-container, .project-box-container{
-       text-align: center;
-       place-items: center;
-       grid-template-columns:  repeat(1, 1fr);
-       
-    }
-    .home-container-img, .about-img{
-        grid-area: 1/1/2/2;
-    
-    }
-}
-
 .footer {
     position: relative;
     bottom:0;
@@ -293,4 +253,33 @@ main {
 .footer a:hover{
     transform: scale(1.2) translateY(-10px);
     color:#0369a1;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #0369a1;
+}
+::-webkit-scrollbar-track{
+    background-color: #4b5563;
+    width: 50px;
+}
+
+@media(max-width: 700px){
+
+    
+    .home-container, .about-container, .project-box-container{
+       text-align: center;
+       place-items: center;
+       grid-template-columns:  repeat(1, 1fr);
+       
+    }
+    .home-container-img, .about-img{
+        grid-area: 1/1/2/2;
+    
+    }
 }
