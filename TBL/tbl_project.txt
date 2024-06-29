@@ -1,0 +1,43 @@
+Header:
+Logo
+Home
+Schedules
+videos
+standings
+Players
+	* Mosquito division
+	* Kids division
+	* Midget idvision
+	* Junior Division
+teams
+	* Mosquito division
+		-mosquito team1
+		-mosquito team2
+		-mosquito team3
+		-mosquito team4
+	* Kids division
+		-Kids team1
+		-Kids team2
+		-Kids team3
+		-Kids team4
+	* Midget idvision
+		-Midget team1
+		-Midget team2
+		-Midget team3
+		-Midget team4
+	* Junior Division
+		-Junior team1
+		-Junior team2
+		-Junior team3
+		-Junior team4
+
+Primary: #303231
+Secondary: #1f201f
+text-: #f1f9ff
+
+
+light red: #ab1022;
+dark: #890c1a;
+
+light blue: #133672;
+dark blue: #12234d;
