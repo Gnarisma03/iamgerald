@@ -17,8 +17,6 @@ main {
     width: 100%;
     min-height: 100vh;
 }
-
-
 .main-slider img {
     width: 100%; 
     height: 100%;
@@ -76,10 +74,11 @@ span.next:hover, span.prev:hover{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
-	border: 3px solid #fff;
+	border: 2px solid var(--text);
 	border-radius: 50%;
 	margin: 0 10px;
 	cursor: pointer;
+    background-color: var(--text);
 }
 .active, .dot:hover{
 	border-color: var(--light-blue);
@@ -108,13 +107,27 @@ span.next:hover, span.prev:hover{
 }  
 
 @media screen and (max-width: 1073px){
-	.main-slider-container{
-		height: 500px;
+    .main-slider .main-slider-container {
+		height: 400px;
+        margin-top:0;
 	}
+    .main-slider-container img {
+        height: 100%;
+    }
+    .dotsbox{
+        position: absolute;
+        top:0;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    
 	.headline-text{
 		line-height: 25px;
         top: 80%;
         left: 25%;
+        padding-bottom:20px;
 	}
     .headline-text h2 {
         font-weight: bold;
@@ -127,23 +140,31 @@ span.next:hover, span.prev:hover{
 
 }
 @media screen and (max-width: 481px){
-    .main-slider-container{
+    .main-slider .main-slider-container {
 		height: 250px;
+        box-shadow: -4px -50px 46px -4px rgba(0,0,0,0.6) inset;
+        -webkit-box-shadow: -4px -100px 46px -4px rgba(0,0,0,0.6) inset;
+        -moz-box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
 	}
 	.headline-text{
-        top: 70%;
+        top: 65%;
         left: 15%;
+        line-height: 20px;
+        
 	}
     .headline-text h2 {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        
     }
     .headline-text p{
     
-        font-size: 13px;
+        font-size: 10px;
     }  
-
     .dotsbox {
-        display: none;
+    display:none;
+      
     }
+
+
 }
