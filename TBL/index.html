@@ -11,8 +11,10 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
   />
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/reset.css">
-    <script src="./js/script.js"></script>
+
+    
 </head>
 <body>
         <header class="header-main">
@@ -145,17 +147,42 @@
         </div>
       </div>
 </div>
-        <main>
-            
+        <main>  
+            <div class="main-slider">
+                <div class="main-slider-container">
+                    <img src="./images/main/batangM.jfif" alt="teams">
+                    <div class="headline-text">
+                        <h2>Batang Maligaya 2024 TBL Champion!</h2>
+                        <p>Batang M. defeats Talisayan to W the championship.</p>
+                    </div>
+                </div>
+                <div class="main-slider-container">
+                    <img src="./images/main/biboyFinalsMvp.jfif" alt="teams">
+                    <div class="headline-text">
+                        <h2>Biboy Almonte Finals MVP.</h2>
+                        <p>Biboy's 26 PT, 6 Reb and 3 AST helps the Batang Maligaya to secure their 1st Champion in TBL</p>
+                    </div>
+                </div>
+                <div class="main-slider-container">
+                    <img src="./images/main/gabhern.jfif" alt="teams">
+                    <div class="headline-text">
+                        <h2>Champion under Mosquito Division: GABHERN!</h2>
+                        <p>The Gabhern finish the season and playofss without any loss!</p>
+                    </div>
+                </div>
+                <span><a class="prev" onclick="plusSlides(-1)">&#10094;</a></span>
+                <span> <a class="next" onclick="plusSlides(1)">&#10095;</a></span>
+              
+              <div class="dotsbox" style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+            </div>
         </main>
 </body> 
-<script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".header-nav-list");
+<script type="text/javascript" src="./js/script.js"></script>   
 
-    hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
-})
-</script>
 </html>
