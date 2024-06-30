@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --light-blue: #133672;;
+    --dark-blue:  #12234d;
+    --text: #f1f9ff;
+  
+    --light-red: #ab1022;
+    --dark-red: #890c1a;
+    --text2: black;
+  
+  }
+
+main {
+    width: 100%;
+    height: 100%;
+}
+.main-headlines-slider img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+    z-index: -5; 
+}
+
+.main-headlines-slider{
+	position: relative;
+	width: 100%;
+}
+
+.main-headlines-slider .main-headlines-slider-container {
+    height: 700px;
+	display: none;
+	overflow: hidden;
+    box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
+    -webkit-box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
+    -moz-box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
+    
+}
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 14px;
+    color: #eee;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 3px;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+span.next:hover, span.prev:hover{
+    background-color: var(--text);
+    opacity: 0.8;
+    color: var(--light-blue);
+} 
+.prev:hover, .next:hover{
+	color: #0f2430; /* blue */
+    background-color: var(--text);
+    opacity: 0.5;
+}
+.main-headlines-dotsbox{
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+	bottom: 5px;
+	cursor: pointer;
+}
+.main-headlines-dot{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 2px solid var(--text);
+	border-radius: 50%;
+	margin: 0 10px;
+	cursor: pointer;
+    background-color: var(--text);
+}
+.active, .main-headlines-dot:hover{
+	border-color: var(--light-blue);
+    
+}
+.next{
+	right: 0;
+}
+  .main-headlines-text{
+    display: flex;
+    flex-direction: column;
+	position: absolute;
+	color: #fff;
+	top: 80%;
+	left: 25%;
+    font-family: "Montserrat", sans-serif;
+}
+  .main-headlines-text h2 {
+    font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+.main-headlines-text p{
+    
+	font-size: 15px;
+}  
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 1px 0;
+    padding: 1rem;
+    background-color: var(--dark-blue);
+    font-family: "Montserrat", sans-serif;  
+}
+.footer .copyright{
+    
+    text-align: center;
+    font-size: 14px;
+    color: var(--text);
+}
+
+
+/* ASIDE */
+
+aside {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    padding: 30px;
+}
+
+.standings-section {
+    height: 50%;
+    width:100%;
+    background-color: yellow;
+}
+.stats-section {
+    height: 50%;
+    width:100%;
+    background-color: green;
+  
+}
+
+@media screen and (max-width: 1073px){
+    .main-headlines-slider .main-headlines-slider-container {
+		height: 400px;
+        margin-top:0;
+	}
+    .main-headlines-slider-container img {
+        height: 100%;
+    }
+    .main-headlines-dotsbox{
+        position: absolute;
+        top:0;
+    }
+    .main-headlines-dot{
+        width: 10px;
+        height: 10px;
+    }
+    
+	.main-headlines-text{
+		line-height: 25px;
+        top: 80%;
+        left: 25%;
+        padding-bottom:20px;
+	}
+    .main-headlines-text h2 {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    .main-headlines-text p{
+    
+        font-size: 13px;
+    }  
+
+}
+@media screen and (max-width: 481px){
+    .main-headlines-slider .main-headlines-slider-container {
+		height: 250px;
+        box-shadow: -4px -50px 46px -4px rgba(0,0,0,0.6) inset;
+        -webkit-box-shadow: -4px -100px 46px -4px rgba(0,0,0,0.6) inset;
+        -moz-box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
+	}
+    .footer .copyright{
+        font-size: 8px;
+    }
+	.main-headlines-text{
+        top: 65%;
+        left: 15%;
+        line-height: 20px;
+        
+	}
+    .main-headlines-text h2 {
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+    .main-headlines-text p{
+    
+        font-size: 10px;
+    }  
+
+    .main-headlines-dot{
+        width: 5px;
+        height: 5px;
+        margin: 0 2px;
+    }
+}

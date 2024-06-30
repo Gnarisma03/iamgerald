@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --light-blue: #133672;;
+  --dark-blue:  #12234d;
+  --text: #f1f9ff;
+
+  --light-red: #ab1022;
+  --dark-red: #890c1a;
+  --text2: black;
+
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+    cursor: pointer;
+  }
+  
+  .logo {
+    margin-left: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: var(--text);
+    
+  }
+  .logo h1 span {
+  
+    color: #ff001e;
+    
+  }
+
+
+  /** Main header starts here **/
+  .header-main {
+    background-color: var(--light-blue);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+.header-nav-list li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .header-nav-list li a {
+    display: block;
+    padding: 25px 25px;
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  
+  .header-nav-list li .teams-menu li a{
+    font-size: 12px;
+  }
+  .header-nav-list li .teams-menu {
+    width: 100%;
+    background: var(--light-blue);
+    position: absolute;
+    z-index: 999;
+    display: none;
+  }
+  .header-nav-list li a:hover {
+    background: var(--dark-red);
+    transition: all 0.75s;
+  }
+  .header-nav ul li:hover .teams-menu {
+    display:block;
+  }
+  
+  .fa-caret-down {
+    margin-left: 10px;
+  }
+  
+  .header-nav-sm {
+    padding-right: 10px;
+  }
+  
+  .header-main-sm-fb a {
+    font-size: 25px;
+    color: var(--text);
+  }
+  
+  .header-main-sm-fb a:hover {
+    color: var(--dark-red);
+    transition: all 0.75s;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var(--text);
+  }
+
+  /** Main header ends here **/
+
+
+
+    
+
+  /** games header starts here **/
+
+  .todays-games-container {
+    width: 100%;
+    margin:auto;
+    background: #f5eded;
+    
+  
+  }
+  
+  .todays-games-carousel {
+    width: 90%;
+    margin:auto;
+    padding: 10px;
+
+    
+  }
+  .todays-games-date-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 1.5%;
+    text-align: center;
+  }
+  .todays-games-date-board {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-red);
+    height: 35%;
+    width: 140px;
+    border-radius: 5%;
+    padding: 10px 10px;
+    line-height: 20px;
+  }
+  .todays-games-date-board p {
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .todays-games-date-board p span {
+    color:white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .todays-games-score-box{
+    background: #fcf5f5;
+    height: 150px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding: 10px 30px 10px 25px;
+    border-radius: 10%;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  hr {
+    background-color: rgb(230, 223, 223);
+    height: 1px;
+  }
+  
+  .todays-games-teams {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .todays-games-note {
+    padding-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    color:var(--text2);
+    display: flex;
+    justify-content: space-around;
+    font-weight: 550;
+    align-items: center;
+
+  }
+  
+  .todays-games-note h2 {
+    font-size: 12px;
+
+  }
+  .todays-games-note p {
+    font-size: 10px;
+  }
+  .todays-games-note p span {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .todays-games-team-name {
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+  .todays-games-team-score {
+    font-size: 15px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
+  }
+  .todays-games-team-image {
+    width: 50px;
+    height: 35px;
+  
+  }
+  
+  .todays-games-team-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 90%;
+    object-fit: cover;
+  } 
+  .todays-games-slider-wrapper {
+    display: flex;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button {
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    color: var(--text);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background:  var(--light-blue);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button:hover {
+    background: var(--dark-blue);
+    opacity: 1;
+  }
+  
+  .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
+    left: 150px;
+    top:17%;
+    display: none;
+    position: absolute;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button#next-slide {
+    top:17%;
+    right: 10px;
+    position: absolute;
+  }
+  .todays-games-slider-wrapper .todays-games-carousel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 25px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    
+  }
+  
+
+
+      /** games header ends here **/
+
+
+
+          /** MEDIA QUERY starts here **/
+
+          @media(max-width:1114px){
+            .logo h1 {
+              font-size: 23px;
+              font-weight: 600;
+              
+            }
+            .todays-games-score-box {
+              height: 120px;
+              width: 200px;
+            }
+            .todays-games-team-name {
+              font-size: 12px;
+            }
+            .todays-games-team-score {
+              font-size: 12px;
+          
+            }
+            .todays-games-team-image {
+              width: 40px;
+              height: 25px;
+            
+            }
+            
+            .header-nav ul li a {
+              font-size: 14px;
+            }
+            .header-nav ul li .teams-menu li a{
+              font-size: 11px;
+            }
+          }
+          
+          @media(max-width:1000px){
+            .hamburger{
+              display: block;
+              position: absolute;
+              top: 20px;
+              right: 30px;
+            }
+            .hamburger.active .bar:nth-child(2){
+                opacity: 0;
+              }
+              .hamburger.active .bar:nth-child(1){
+                transform: translateY(8px) rotate(45deg);
+              }
+              .hamburger.active .bar:nth-child(3){
+                transform: translateY(-8px) rotate(-45deg);
+              }
+          
+              .header-nav {
+                padding: 30px 30px;
+              }
+          
+              .header-main {
+                background-color: var(--dark-blue);
+              }
+          
+              .header-nav-list{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                right: -100%;
+                width: 100%;
+                top: 60px;
+                gap: 15px;
+                background-color: var(--light-blue);
+                align-items: center;
+                z-index: 999;
+              }
+              .header-nav-sm {
+                display:none;
+              }
+              .header-nav-list.active{
+                right: 0;
+              }
+              .header-nav ul li:hover .teams-menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                top: 0;
+              }
+              .todays-games-date-board {
+                height: 25%;
+                width: 100px;
+                line-height: 13px;
+              }
+              .todays-games-date-board p {
+                font-size: 9px;
+              }
+              .todays-games-date-board p span {
+                font-size: 12px;
+                font-weight: 600;
+              }
+          
+              .todays-games-game-carousel{
+                display:flex;
+                flex-direction: column;
+              }
+              .todays-games-slider-wrapper .todays-games-game-carousel {
+                gap: 10px;
+                margin-bottom: 15px;
+                scroll-snap-type: x mandatory;
+              }
+              .todays-games-slider-wrapper .todays-games-slide-button {
+                display: none !important;
+              }  
+          }
+          
+          @media(max-width:431px){
+            .logo h1 {
+              font-size: 20px;
+              font-weight: 600;
+            }
+            .todays-games-slider-wrapper {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding-top: 10px;
+            }
+            .todays-games-slider-wrapper .todays-games-slide-button {
+              display: block !important;
+              height: 20px;
+              width: 15px;
+              font-size: 1rem;
+            }  
+            .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
+              left: 5px;
+              top:18%;
+            }
+            .todays-games-slider-wrapper .todays-games-slide-button#next-slide {
+              top:18%;
+              right: 5px;
+            }
+          
+          }
