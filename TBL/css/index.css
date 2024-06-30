@@ -15,7 +15,8 @@
 
 main {
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
+
 }
 .main-slider img {
     width: 100%; 
@@ -53,6 +54,8 @@ main {
     cursor: pointer;
     z-index: 1;
 }
+
+
 span.next:hover, span.prev:hover{
     background-color: var(--text);
     opacity: 0.8;
@@ -105,7 +108,20 @@ span.next:hover, span.prev:hover{
     
 	font-size: 15px;
 }  
-
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 1px 0;
+    padding: 1rem;
+    background-color: var(--dark-blue);
+    font-family: "Montserrat", sans-serif;  
+}
+.footer .copyright{
+    
+    text-align: center;
+    font-size: 14px;
+    color: var(--text);
+}
 @media screen and (max-width: 1073px){
     .main-slider .main-slider-container {
 		height: 400px;
@@ -146,6 +162,9 @@ span.next:hover, span.prev:hover{
         -webkit-box-shadow: -4px -100px 46px -4px rgba(0,0,0,0.6) inset;
         -moz-box-shadow: -4px -200px 46px -4px rgba(0,0,0,0.6) inset;
 	}
+    .footer .copyright{
+        font-size: 8px;
+    }
 	.headline-text{
         top: 65%;
         left: 15%;
@@ -161,10 +180,10 @@ span.next:hover, span.prev:hover{
     
         font-size: 10px;
     }  
-    .dotsbox {
-    display:none;
-      
+
+    .dot{
+        width: 5px;
+        height: 5px;
+        margin: 0 2px;
     }
-
-
 }
