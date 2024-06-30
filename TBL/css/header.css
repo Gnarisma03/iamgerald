@@ -125,12 +125,14 @@ a {
   margin:auto;
   background: #f5eded;
 
+
 }
 
 .game-carousel {
   width: 90%;
   margin:auto;
   padding: 10px;
+  
   
 }
 .date-container {
@@ -157,6 +159,7 @@ a {
 }
 .date-board p span {
   color:white;
+  font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 600;
 }
@@ -367,10 +370,15 @@ hr {
     }  
 }
 
-@media(max-width:345px){
+@media(max-width:431px){
   .logo h1 {
     font-size: 20px;
     font-weight: 600;
+  }
+  .slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
   }
 
 }
