@@ -46,12 +46,18 @@
                     <span class="bar"></span>
                   </div>
                 </header>
+                
         <div class="container">
+        
         <div class="slider-wrapper">
-        <div class="game-carousel"> 
+            <div class="date-container">
+                <div class="date-board"><p>Today's Schedule<br><span id="d"></span></p></div>  
+              </div>
+        <div class="game-carousel">
             <button id="prev-slide" class="slide-button material-symbols-rounded">
                 chevron_left
               </button>
+
             <div class="game-box">
                 <h2>Final</h2>
                 <div class="game-team">
@@ -182,7 +188,23 @@
               </div>
             </div>
         </main>
+        <section>
+            SECTION here
+        </section>
+        <footer class="footer">
+            <p class="copyright">  <a href="">&copy; 2024 Gerald Narisma | All Rights Reserved</a></p>
+        </footer>
 </body> 
-<script type="text/javascript" src="./js/script.js"></script>   
+<script type="text/javascript" src="./js/script.js"></script>  
+<script>
+    const now = new Date();
+    const newYears = new Date("1/1/2024");
+
+    const todayDate = (date) => date.toLocaleDateString
+    (undefined, {
+        dateStyle: "long"
+    })  
+    document.getElementById("d").innerHTML = (todayDate(now));
+</script> 
 
 </html>
