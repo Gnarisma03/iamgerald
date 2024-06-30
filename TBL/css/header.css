@@ -133,7 +133,34 @@ a {
   padding: 10px;
   
 }
-
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-left: 1.5%;
+}
+.date-board {
+  display: flex;
+  justify-content: center;
+  background-color: var(--light-red);
+  height: 35%;
+  width: 140px;
+  border-radius: 5%;
+  padding: 10px 10px;
+  line-height: 20px;
+}
+.date-board p {
+  color:white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.date-board p span {
+  color:white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
 
 .game-box {
   background: #fcf5f5;
@@ -185,7 +212,9 @@ hr {
   border-radius: 90%;
   object-fit: cover;
 } 
-
+.slider-wrapper {
+  display: flex;
+}
 .slider-wrapper .slide-button {
 
   height: 50px;
@@ -206,7 +235,7 @@ hr {
 }
 
 .slider-wrapper .slide-button#prev-slide {
-  left: 10px;
+  left: 150px;
   top:17%;
   display: none;
   position: absolute;
@@ -227,12 +256,33 @@ hr {
 
 
 
+
+
+
+
 @media(max-width:1114px){
   .logo h1 {
     font-size: 23px;
     font-weight: 600;
     
   }
+  .game-box {
+    height: 120px;
+    width: 200px;
+  }
+  .team-name {
+    font-size: 12px;
+  }
+  .team-score {
+    font-size: 12px;
+
+  }
+  .team-image {
+    width: 40px;
+    height: 25px;
+  
+  }
+  
   .header-nav ul li a {
     font-size: 14px;
   }
@@ -291,6 +341,18 @@ hr {
       position: relative;
       top: 0;
     }
+    .date-board {
+      height: 25%;
+      width: 100px;
+      line-height: 10px;
+    }
+    .date-board p {
+      font-size: 9px;
+    }
+    .date-board p span {
+      font-size: 10px;
+      font-weight: 600;
+    }
 
     .game-carousel{
       display:flex;
@@ -306,12 +368,10 @@ hr {
     }  
 }
 
-
 @media(max-width:345px){
   .logo h1 {
     font-size: 20px;
     font-weight: 600;
-    
   }
 
 }
