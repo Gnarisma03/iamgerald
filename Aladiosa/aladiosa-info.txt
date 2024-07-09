@@ -1,0 +1,21 @@
+Primary: #ddb351;
+Secondary: 000000;
+text: fbf6e0;
+text2: f5f5f5;
+
+Home:
+Sale
+ *
+Rental
+ * Pageant
+ * Evening Gowns
+ * Ballgowns
+ * Wedding Gowns
+About: 
+Contact: 
+
+
+
+InspO:
+https://www.bridalboutiqueph.com/
+https://www.noellewestbridals.com/new-entourage-package-for-rent-1

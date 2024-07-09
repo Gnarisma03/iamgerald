@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="icon" type="image/x-icon" href="./images/aladiosa-logo.jpg" alt="aladiosa_logo">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+ />
+   <link rel="stylesheet" href="./css/header.css"> 
+   <link rel="stylesheet" href="./css/main.css"> 
+   <link rel="stylesheet" href="./css/reset.css"> 
+   <title>Ala Diosa Gowns & Boutique </title>
+</head>
+<body>
+   <header id="header_main" class="header_main"> 
+      <div class="header_main_logo">
+         <div id="header_main_logo_image" class="header_main_logo_image">
+            <img src="./images/aladiosa-logo-1.jpg" alt="aladiosa_logo">
+         </div>
+            <div id="header_main_logo_text" class="header_main_logo_text">
+               <span><a href="">Ala Diosa Gowns & Boutique</a></span>
+            </div>
+      </div>
+      <nav class="header_main_nav">
+            <ul class="header_main_nav_list">
+                  <li><a href="#home" class="active">Home</a></li>
+                  <li><a href="#sale">For Sale</a></li>
+                  <li><a href="#rentals">For Rentals</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#"><div class="header-main-sm-fb"><a href="https://www.facebook.com/AlaDiosaGownsandBoutique" target=”_blank” ><i class='bx bxl-facebook-circle'></i></a></div></li>
+                  
+            </ul>
+      
+           </div>
+            <div class="hamburger_menu">
+               <span class="bar_menu"></span>
+               <span class="bar_menu"></span>
+               <span class="bar_menu"></span>
+             </div>
+             
+      </nav>
+
+   </header>
+   <main>
+      <section id="home" class="slider_section">
+         <div class="main_slider">
+            <div class="main_slider_container">
+               <img src="./images/gown1.jpg" alt="aladiosa-image" width="400" height="300">
+               <div class="main_slider_text">
+                  <h3>FB LIVE SELLING</h3>
+                  <p>We do live selling in our FB page every Monday, Wednesday and Friday at 8PM.</p>
+ 
+              </div>
+            </div>
+            <div class="main_slider_container">
+               <img src="./images/gown2.jpg" alt="aladiosa-image">
+            </div>
+            <div class="main_slider_container">
+               <img src="./images/gown3.jpg" alt="aladiosa-image">
+            </div>
+            <span><a class="prev" onclick="plusSlides(-1)">&#10094;</a></span>
+            <span> <a class="next" onclick="plusSlides(1)">&#10095;</a></span>
+          
+          <div class="slider_dotsbox" style="text-align:center">
+              <span class="slider_dot" onclick="currentSlide(1)"></span>
+              <span class="slider_dot" onclick="currentSlide(2)"></span>
+              <span class="slider_dot" onclick="currentSlide(3)"></span>
+          </div>
+         </div>
+         
+      </section>
+      <section id="sale" class="sale_section">
+         <h2>Sale Section Here</h2>
+         <h3>List of Gowns for Sale</h3>
+         <h4>Gown 1</h4>
+         <h4>Gown 2</h4>
+         <h4>Gown 3</h4>
+      </section>
+      <section id="rentals" class="rentals_section">
+         Rentals Section Here
+      </section>
+      <section id="about" class="about_section">
+         ABOUT Section Here <br>
+         Info about the store, location etc.
+      </section>
+      <section id="contact" class="contact_section">
+         Contact Section Here
+      </section>
+
+   </main>
+   <script type="text/javascript" src="./js/script.js"></script>
+   <script>
+      const myslide = document.querySelectorAll('.main_slider_container'),
+dot = document.querySelectorAll('.slider_dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function plusSlides(n) {
+	counter += n;
+	slidefun(counter);
+	resetTimer();
+}
+function currentSlide(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide, 8000);
+}
+
+function slidefun(n) {
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' active', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " active";
+}
+
+
+   </script>
+</body>
+
+
+
+</html>
