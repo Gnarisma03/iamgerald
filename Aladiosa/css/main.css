@@ -169,11 +169,11 @@ span.next:hover, span.prev:hover{
     .main_slider .main_slider_container {
         height: 400px;
     }
-    .slider_dotsbox{
-        top: 82%;
-    }
     .prev, .next{
         top: 40%;
+    }
+    .slider_dotsbox{
+        top: 82%;
     }
     .main_slider_text{
         line-height: 36px;
@@ -194,13 +194,13 @@ span.next:hover, span.prev:hover{
     .main_slider .main_slider_container {
         height: 350px;
     }
-    .slider_dotsbox{
-        top: 70%;
-    }
     .prev, .next{
         top: 35%;
         font-size: 12px;
         z-index: 1;
+    }
+    .slider_dotsbox{
+        top: 70%;
     }
     .slider_dot{
         width: 10px;
@@ -214,6 +214,37 @@ span.next:hover, span.prev:hover{
     .main_slider_text h3 {
         font-weight: bold;
         font-size: 30px;
+    }
+    .main_slider_text p{
+        
+        font-size: 10px;
+    } 
+}
+
+@media(max-width:376px){
+    .main_slider .main_slider_container {
+        height: 300px;
+    }
+    .slider_dotsbox{
+        top: 60%;
+    }
+    .prev, .next{
+        top: 35%;
+        font-size: 12px;
+        z-index: 1;
+    }
+    .slider_dot{
+        width: 9px;
+        height: 9px;
+    }
+    .main_slider_text{
+        line-height: 20px;
+        top: 76%;
+        left: 2%;
+    }
+    .main_slider_text h3 {
+        font-weight: bold;
+        font-size: 23px;
     }
     .main_slider_text p{
         
