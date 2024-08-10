@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --header: #242625;
+  --header2: #313131;
+  --light-blue: #133672;;
+  --dark-blue:  #12234d;
+  --text: #f1f9ff;
+
+  --light-red: #ab1022;
+  --dark-red: #890c1a;
+  --text2: black;
+
+  --font: "Montserrat", sans-serif;
+  --body-color: #f6f6f6;
+  --container-color: #ffffff;
+}
+
+
+body {
+
+    font-family: var(--font);
+}
+
+.main-carousel {
+    position: relative;
+    overflow: hidden;
+    height: fit-content; /* Allows the carousel to adjust its height based on the content */
+    margin-bottom: 1rem;
+}
+
+.main-carousel .carousel-inner {
+    position: relative;
+}
+
+.main-carousel .carousel-item {
+    position: relative;
+}
+
+.main-carousel .carousel-item img {
+    width: 100%;
+    height: auto; /* Ensure the image fills the height of the carousel */
+    display: block;
+}
+
+.news-updates-container {
+    background-color: var(--container-color);
+    border-radius: 2%;
+    box-shadow: 2px -11px 60px -1px rgba(0,0,0,0.31);
+    -webkit-box-shadow: 2px -11px 60px -1px rgba(0,0,0,0.31);
+    -moz-box-shadow: 2px -11px 60px -1px rgba(0,0,0,0.31);;
+}
+
+
+/* Overlay for the lower part of the image */
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%; /* Adjust height based on how much of the image you want to cover */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 2) 100%);
+    z-index: 1; /* Ensure shadow is above the image but below the caption */
+}
+
+
+    /* Styling for the caption */
+    .carousel-caption {
+        position: absolute;
+        bottom: 5px;
+        left: 20px;
+        right: 20px;
+        z-index: 99; /* Ensure caption is above the overlay */
+        color: #fff; /* White text for better contrast */
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    
+}
+.news-updates {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.news-header {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.news-title {
+    font-size: 1.75rem;
+    color: #343a40;
+    margin-bottom: 0.25rem;
+}
+
+.news-caption {
+    font-size: 1.125rem;
+    color: #6c757d;
+    margin-bottom: 1rem;
+}
+
+.news-updates-list .list-group-item {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+    background-color: #ffffff;
+    padding: 0.75rem;
+    color: #495057;
+}
+
+.update-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.update-caption {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+.news-updates-list .list-group-item:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.standings {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.standings .nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.standings .nav-pills .nav-link {
+    border-radius: 0.25rem;
+}
+
+.standings .nav-pills .nav-link.active {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.standings .team-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.standings table {
+    margin-top: 1rem;
+}
+
+.standings .table th, .standings .table td {
+    text-align: center;
+}
+
+.carousel-caption h5 {
+    font-size: 40px;
+    font-weight:500;
+}
+
+@media(max-width:786px){
+    .carousel-caption h5 {
+    font-size: 20px;
+    }
+    .carousel-caption  {
+    font-size: 12px;
+    }
+}
+
