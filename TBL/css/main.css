@@ -1,0 +1,47 @@
+.main-carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-carousel .carousel-inner {
+    position: relative;
+}
+
+.main-carousel .carousel-item {
+    position: relative;
+}
+
+.main-carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay for the lower part of the image */
+.carousel-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%; /* Adjust height based on how much of the image you want to cover */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 2) 100%);
+    z-index: 1; /* Ensure shadow is above the image but below the caption */
+}
+
+
+    /* Styling for the caption */
+    .carousel-caption {
+        position: absolute;
+        bottom: 10px;
+        left: 20px;
+        right: 20px;
+        z-index: 99; /* Ensure caption is above the overlay */
+        color: #fff; /* White text for better contrast */
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    
+}
+
+
