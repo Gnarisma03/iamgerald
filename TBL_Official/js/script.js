@@ -9,6 +9,14 @@ navMenu.classList.toggle("active");
 })
 
 
+const now = new Date();
+const newYears = new Date("1/1/2024");
+
+const todayDate = (date) => date.toLocaleDateString
+(undefined, {
+    dateStyle: "long"
+})  
+document.getElementById("d").innerHTML = (todayDate(now));
 
 const initSlider = () => {
     const imageList = document.querySelector(".todays-games-slider-wrapper .todays-games-carousel");
