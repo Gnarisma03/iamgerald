@@ -203,7 +203,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     width: 160px;
-    height: 185px;
+    height: auto;
     padding: 5px;
     border-radius: 2%;
   }
