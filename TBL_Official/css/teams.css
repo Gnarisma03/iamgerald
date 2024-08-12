@@ -1,0 +1,128 @@
+  /* Custom CSS Variables */
+        :root {
+            --header: #242625;
+            --header2: #313131;
+            --light-blue: #133672;
+            --dark-blue: #12234d;
+            --text: #f1f9ff;
+            --light-red: #ab1022;
+            --dark-red: #890c1a;
+            --text2: black;
+            --font: "Montserrat", sans-serif;
+            --body-color: #f6f6f6;
+            --container-color: #ffffff;
+        }
+
+    
+        .container {
+            margin-top: 115px;
+        }
+
+         /* Adjust spacing within brackets */
+         .brackets {
+            margin-bottom: 1.5rem;
+        }
+
+        .section {
+            margin: 2rem 0;
+        }
+
+        .division-title {
+            background-color: var(--dark-blue);
+            color: var(--text);
+            padding: 0.5rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        .brackets {
+            background-color: var(--container-color);
+            border: 1px solid rgb(224, 224, 224);
+            border-radius: 10px 10px 0 0;
+            box-shadow: 2px rgba(0,0,0,0.5);
+        }
+
+        .team:hover {
+            background-color: #e0e0e0;
+            transition: background-color 0.3s ease;
+        }
+
+        .bracket-header {
+            background-color: var(--light-red);
+            color: var(--text);
+            padding: 5px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .team {
+            display: flex;
+            align-items: center;
+            padding: 0.1rem;
+            border-bottom: 1px solid rgb(224, 224, 224);
+            background-color: var(--container-color);
+            gap: 1rem; /* Adds space between flex items */
+        }
+        
+        .team-image img {
+            width: 50px; /* Adjust size as needed */
+            height: 50px; /* Adjust size as needed */
+            border-radius: 50%;
+        }
+        
+        .team-name a {
+            font-weight: 500;
+            color: var(--dark-blue);
+        }
+
+        .team-coach {
+            font-size: 0.8rem;
+        }
+        
+        .team-info {
+            display: flex;
+            flex-direction: column;
+            color: var(--text2);
+        }
+        
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-main-nav-list {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .team img {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 0.5rem;
+            }
+            .bracket-header {
+                font-size: 1.2rem;
+            }
+
+            .division-title {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .team img {
+                width: 30px;
+                height: 30px;
+            }
+
+            .team-name {
+                font-size: 0.7rem;
+            }
+
+            .team-info {
+                font-size: 0.6rem;
+            }
+            .bracket-header {
+                font-size: 1.1rem;
+            }
+            .division-title {
+                font-size: 1.2rem;
+            }
+        }
