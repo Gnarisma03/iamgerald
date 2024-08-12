@@ -126,22 +126,20 @@ body {
 
   /** Games Header starts here **/
 
-  .todays-games-header {
-    margin-top: 80px; /* Adjust based on the height of your header */
-  }
-
   .todays-games-container {
     width: 100%;
     margin:auto;
-    height: 100%;
     position: relative;
+    margin-top: 80px;
 
   }
   .todays-games-carousel {
     width: 90%;
     margin:auto;
-    padding: 10px; 
+    padding: 10px 0; 
   }
+
+  /** date */
   .todays-games-date-container {
     display: flex;
     justify-content: center;
@@ -158,6 +156,7 @@ body {
     border-radius: 3%;
     padding: 10px 10px;
     line-height: 20px;
+    margin-right: 3px;
   }
   .todays-games-date-board p {
     color: var(--text);
@@ -172,35 +171,16 @@ body {
     font-weight: 600;
     padding-bottom: 10px;
   }
-  .todays-games-score-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%; /** DITO */
-    width: 170px;
-    
-  }
-  .todays-games-score-box-container{
-    position: relative;
-    background: var(--container-color);
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 3%;
-    font-family: "Montserrat", sans-serif;
-  }
+
+
   .view-box-score {
     opacity: 0.8;
     background-color: var(--dark-blue);
     margin-top: 10px;
-    margin-left: 35px;
+    margin-left: 30px;
     width: 100px;
     padding: 5px;
+    text-align: center;
   }
   .view-box-score a {
     font-size: 10px;
@@ -216,21 +196,27 @@ body {
     background-color: rgb(219, 219, 219);
     height: 1px;
   }
-  
-  .todays-games-teams {
+  .todays-games-score-box {
+    width: 140px;
+    background-color: white;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 160px;
+    height: 185px;
+    padding: 5px;
+    border-radius: 2%;
   }
   .todays-games-note {
-    padding-bottom: 5px;
+    display: flex;
     font-family: "Montserrat", sans-serif;
     color:var(--text2);
-    display: flex;
     justify-content: space-around;
     font-weight: 550;
-    align-items: center;
-
+  }
+  .todays-games-teams {
+    display: flex;
+    justify-content: space-around;
   }
   .todays-games-note h2 {
     font-size: 12px;
@@ -300,7 +286,7 @@ body {
   .todays-games-slider-wrapper .todays-games-carousel {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    gap: 25px;
+    gap: 5px;
     font-size: 0;
     overflow-x: auto;
     scrollbar-width: none;
@@ -350,6 +336,9 @@ body {
       .header-main-nav-list li a{
         width: 100%;
       }
+      .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
+        left: 0;
+      }
 
 
     .header-main-nav-list li a i {
@@ -380,7 +369,13 @@ body {
     height: 10%;
     width: 90px;
     padding: 0;
-    line-height: 18px;
+    line-height: 16px;
+  }
+
+  .todays-games-score-box {
+    width: 130px;
+    height: 150px;
+    padding: 2px;
   }
   .todays-games-date-board p {
     font-size: 8px;
@@ -388,8 +383,42 @@ body {
   .todays-games-date-board p span {
     font-size: 10px;
     padding:0;
-  }  
-    
+  } 
+
+  .todays-games-note {
+    font-weight: 400;
+  }
+  .todays-games-note h2 {
+    font-size: 10px;
+  }
+  .todays-games-note p {
+    font-size: 8px;
+  }
+  .todays-games-note p span {
+    font-weight: 500;
+  }
+  .todays-games-team-name {
+    font-size: 12px;
+    font-weight: 600;
+
+  }
+  .todays-games-team-score {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .todays-games-team-image {
+    width: 30px;
+    height: 25px;
+  }
+
+  .view-box-score {
+    width: 80px;
+    padding: 3px;
+    text-align: center;
+  }
+  .view-box-score a {
+    font-size: 8px;
+  }
   }
 
   
