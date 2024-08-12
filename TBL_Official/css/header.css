@@ -367,77 +367,28 @@ body {
   .header-main-nav-list li a i.icon {
       font-size: 1rem; /* Adjust icon size on mobile */
   }
-      .todays-games-carousel {
-        padding: 10px; 
-      }
-      .todays-games-date-board {
-        width: 100px;
-        padding:0;
-        margin-top: 2px;
-      }
-      .todays-games-date-board p {
-        font-size: 10px;
-        font-weight: 400;
-      }
-      .todays-games-date-board p span {
-        font-size: 11px;
-        font-weight: 500;
-        padding:0;
-      }
-      .todays-games-score-box{
-        width: 150px;
-        
-      }
-      .todays-games-score-box-container{
-        padding: 10px 5px;
-      }
-      .view-box-score {
-        margin-top: 0;
-        margin-left: 50px;
-        width: 80px;
-        padding: 3px;
-      }
-      .view-box-score a {
-        font-size: 8px;
-      }
-      .todays-games-note {
-        padding-bottom:0;
-    
-      }
-      .todays-games-note h2 {
-        font-size: 10px;
-    
-      }
-      .todays-games-note p {
-        font-size: 8px;
-      }
-      .todays-games-team-name {
-        font-size: 13px;
-        font-weight: 500;
-    
-      }
-      .todays-games-team-score {
-        font-size: 12px;
-        font-weight: 400;
-      }
-      .todays-games-team-image {
-        width: 25px;
-        height: 25px;
-      }
-      .todays-games-slider-wrapper {
-        flex-direction: column;
-      }
-      
-      .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
-        left:0;
-      }
+ 
+  .todays-games-slider-wrapper {
+    flex-direction: column;
+  }
 
-      .todays-games-slider-wrapper .todays-games-carousel {
+  .todays-games-date-container {
+    margin-top: 1%;
 
-        gap: 5px;
-      }
-         
-      
+  }
+  .todays-games-date-board {
+    height: 10%;
+    width: 90px;
+    padding: 0;
+    line-height: 18px;
+  }
+  .todays-games-date-board p {
+    font-size: 8px;
+  }
+  .todays-games-date-board p span {
+    font-size: 10px;
+    padding:0;
+  }  
     
   }
 
