@@ -53,6 +53,10 @@ body {
     -moz-box-shadow: 2px -11px 60px -1px rgba(0,0,0,0.31);;
 }
 
+.carousel-indicators {
+    bottom: -15px;
+}
+
 
 /* Overlay for the lower part of the image */
 .carousel-item::after {
@@ -68,16 +72,16 @@ body {
 
 
     /* Styling for the caption */
-    .carousel-caption {
-        position: absolute;
-        bottom: 5px;
-        left: 20px;
-        right: 20px;
-        z-index: 99; /* Ensure caption is above the overlay */
-        color: #fff; /* White text for better contrast */
-        text-align: center;
-        padding: 10px;
-        border-radius: 5px;
+ .carousel-caption {
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+    right: 20px;
+    z-index: 99; /* Ensure caption is above the overlay */
+    color: #fff; /* White text for better contrast */
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
     
 }
 .news-updates {
@@ -308,10 +312,11 @@ body {
 
 @media(max-width:786px){
     .carousel-caption h5 {
-    font-size: 20px;
+    font-size: 15px;
+    bottom: -10px;
     }
     .carousel-caption  {
-    font-size: 12px;
+    font-size: 10px;
     }
 
     .text-sm {
