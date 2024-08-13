@@ -1,0 +1,107 @@
+:root {
+    --header: #242625;
+    --header2: #313131;
+    --light-blue: #133672;
+    --dark-blue: #12234d;
+    --text: #f1f9ff;
+    --light-red: #ab1022;
+    --dark-red: #890c1a;
+    --text2: black;
+    --font: "Montserrat", sans-serif;
+    --body-color: #f6f6f6;
+    --container-color: #ffffff;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--body-color);
+    margin-top: 90px;
+}
+
+.container {
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    font-size: 10px8;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.date-picker-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.date-picker-container .form-control {
+    padding-right: 2.5rem; /* Space for the calendar icon */
+}
+
+.icon-date-picker {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--dark-blue);
+    pointer-events: none;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+}
+
+.button-group button {
+    margin: 0 5px;
+    background-color: var(--light-blue);
+    border-color: var(--dark-blue);
+}
+
+.button-group button:hover {
+    background-color: var(--dark-blue);
+    border-color: var(--dark-blue);
+}
+
+.current-date {
+    margin: 0 10px;
+    min-width: 120px;
+    text-align: center;
+    color: var(--dark-blue);
+}
+
+/* Spinner Styles */
+.spinner-wrapper {
+    text-align: center;
+    display: none; /* Initially hidden */
+}
+
+.spinner-wrapper.show {
+    display: table-row; /* Show spinner as a table row */
+}
+.spinner-wrapper {
+    display: none; /* Hidden by default */
+    text-align: center; /* Center the spinner horizontally */
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 3px;
+}
+
+
