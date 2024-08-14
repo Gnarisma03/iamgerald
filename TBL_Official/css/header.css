@@ -130,6 +130,7 @@ body {
     margin:auto;
     position: relative;
     margin-top: 80px;
+    height: 180px;
 
   }
   .todays-games-carousel {
@@ -150,7 +151,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--light-red);
-    height: 30%;
+    height: 80px;
     width: 140px;
     border-radius: 3%;
     padding: 10px 10px;
