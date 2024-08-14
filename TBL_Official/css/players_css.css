@@ -1,0 +1,295 @@
+/* Root Variables */
+:root {
+    --header: #242625;
+    --header2: #313131;
+    --light-blue: #133672;
+    --dark-blue: #12234d;
+    --text: #f1f9ff;
+    --light-red: #ab1022;
+    --dark-red: #890c1a;
+    --text2: black;
+    --font: "Montserrat", sans-serif;
+    --body-color: #f6f6f6;
+    --container-color: #ffffff;
+  }
+  
+  /* General Styles */
+  body {
+    font-family: var(--font);
+    background-color: var(--body-color);
+    color: var(--text2);
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  /* Main Container */
+  .container {
+    background-color: var(--container-color);
+    padding: 40px;
+    margin-top: 120px;
+    border-radius: 10px;
+  }
+  
+  /* Filters */
+/* Adjust filter width */
+.filters .custom-select-width {
+    width: 100%; /* Make the dropdown take full width of its parent container */
+    max-width: 400px; /* Set a maximum width for the dropdowns */
+    margin: 0 auto; /* Center the dropdowns within their columns */
+  }
+  
+  /* Center and align the filter labels */
+  .filters .form-label {
+    display: block;
+    text-align: center; /* Center the labels above the dropdowns */
+    color: var(--header);
+    font-weight: bold;
+  }
+  
+  /* Flexbox to ensure filters align and center properly */
+  .filters .row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add space between filters */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .filters .custom-select-width {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 100%; /* Ensure full width */
+      margin-bottom: 15px; /* Add spacing between filters on small screens */
+    }
+  }
+  
+  .custom-select-width {
+    width: 100%;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    max-width: 100%; /* Ensure it doesn't overflow its container */
+}
+
+.custom-table {
+    width: 100%;
+    min-width: 786px; /* Set a minimum width for your table */
+    color: var(--header);
+    background-color: var(--container-color);
+    border-collapse: collapse;
+}
+
+.custom-table th, .custom-table td {
+    white-space: nowrap; /* Prevent content from wrapping */
+    text-align: left;
+    padding: 8px 12px; /* Add padding to cells */
+}
+
+.custom-table th {
+    background-color: var(--container-color);
+    position: sticky;
+    top: 0; /* Stick the header to the top */
+    z-index: 10; /* Ensure it stays above the body */
+    color: var(--text);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.custom-table td {
+    background-color: var(--container-color);
+}
+
+.custom-table tbody {
+    display: block;
+    max-height: 300px; /* Set a fixed height for the table body */
+    overflow-y: auto; /* Enable vertical scrolling within the tbody */
+    width: 100%;
+}
+
+.custom-table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensure cells maintain their width */
+}
+
+.custom-table thead tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed; /* Ensure header cells align with body cells */
+}
+
+/* Adjust column widths if needed */
+.custom-table th:nth-child(1), .custom-table td:nth-child(1) {
+    width: 30%; /* Example width for the Name column */
+}
+
+.custom-table th:nth-child(2), .custom-table td:nth-child(2) {
+    width: 20%; /* Example width for the Team column */
+}
+
+.custom-table th:nth-child(3), .custom-table td:nth-child(3) {
+    width: 10%; /* Example width for the No column */
+}
+
+.custom-table th:nth-child(4), .custom-table td:nth-child(4) {
+    width: 20%; /* Example width for the Position column */
+}
+
+.custom-table th:nth-child(5), .custom-table td:nth-child(5) {
+    width: 20%; /* Example width for the Height column */
+}
+
+
+  
+  
+  .custom-table th,
+  .custom-table td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  .custom-table th {
+    background-color: var(--dark-blue);
+    position: sticky;
+    top: 0; /* Stick the header to the top */
+    z-index: 10; /* Ensure it stays above the body */
+}
+  
+  .custom-table td {
+    border-bottom: 1px solid rgb(189, 189, 189);
+  }
+  
+  .custom-table img {
+    max-height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+  .custom-table a:hover {
+    color: var(--light-red);
+    text-decoration: underline;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .custom-table {
+      width: 100%;
+      max-width: 100%; /* Allow the table to be full-width on smaller screens */
+      font-size: 14px; /* Adjust the font size for better readability */
+    }
+    .custom-table th, .custom-table td {
+      padding: 10px;
+    }
+    .custom-table img {
+      max-height: 40px;
+    }
+  }
+
+
+
+  /* PLAYER PROFILE */
+
+  /* Container and Layout */
+.player-profile {
+    background-color: var(--container-color);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Player Photo */
+  .player-photo {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+    /* Team Photo */
+    .team-photo {
+      border-radius: 50%;
+      max-width: 100px;
+
+    }
+  
+  /* Player Name */
+  .player-name {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    font-weight: bold;
+  }
+  
+  /* Player Information */
+  .player-team,
+  .player-position {
+    font-size: 1.2rem;
+    color: var(--header);
+    margin-bottom: 8px;
+  }
+  
+  .player-team span,
+  .player-position span {
+    color: var(--dark-blue);
+    font-weight: bold;
+  }
+  
+  /* Player Stats */
+
+  .player-stats h2 {
+    font-size: 1.8rem;
+    color: var(--dark-blue);
+    margin-top: 20px;
+  }
+  
+ 
+  .player-stats li {
+    font-size: 1.1rem;
+    color: var(--header2);
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    
+  }
+
+  
+  .player-stats li span {
+    color: var(--light-blue);
+    font-weight: bold;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .player-profile {
+      padding: 15px;
+    }
+  
+    .player-photo {
+      max-width: 150px;
+    }
+  
+    .player-name {
+      font-size: 1.2rem;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .player-stats h2 {
+      font-size: 1rem;
+    }
+  
+    .player-stats li {
+      font-size: 0.8rem;
+    }
+
+    .player-info p {
+      font-size: 0.8rem;
+    }
+  }
+  
