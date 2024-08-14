@@ -226,7 +226,7 @@ body {
     font-family: "Montserrat", sans-serif;
     color:var(--text2);
     justify-content: space-around;
-    font-weight: 550;
+   
   }
   .todays-games-teams {
     display: flex;
@@ -240,18 +240,13 @@ body {
   .todays-games-note p {
     font-size: 10px;
   }
-  .todays-games-note p span {
-    font-weight: 700;
-    text-transform: uppercase;
-  }
   .todays-games-team-name {
     font-size: 15px;
-    font-weight: 600;
 
   }
   .todays-games-team-score {
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 400;
     font-family: "Montserrat", sans-serif;
   }
   .todays-games-team-image {
