@@ -201,7 +201,7 @@ body {
   }
   .todays-games-score-box-container{
     background: var(--container-color);
-    height: auto;
+    min-height: 50px;
     width: 100%;
     display: flex;
     flex-direction: column;
