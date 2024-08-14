@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+  --header: #242625;
+  --header2: #313131;
+  --light-blue: #133672;;
+  --dark-blue:  #12234d;
+  --text: #f1f9ff;
+
+  --light-red: #ab1022;
+  --dark-red: #890c1a;
+  --text2: black;
+
+  --font: "Montserrat", sans-serif;
+  --body-color: #f6f6f6;
+  --container-color: #ffffff;
+}
+
+a {
+    cursor: pointer;
+  }
+
+body {
+  background-color: var(--body-color);
+}
+
+/** Main Nav Start Here */
+.header-main {
+    width: 100%;
+    height: 80px;
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content:flex-start;
+    position: fixed; /* Fixes the header to the top */
+    top: 0; /* Positions it at the top */
+    left: 0; /* Ensures it starts at the left edge */
+    z-index: 1000; /* Keeps it above other content */
+  }
+  .header-main-logo {
+    width: fit-content;
+    height: 100%;
+    padding: 0 25px 0 0;
+    display: flex;
+    position: relative;
+    background-color: var(--header);
+    clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0% 100%);
+    overflow: hidden; /* Ensure pseudo-elements don't overflow */
+}
+
+
+  .header-main-logo img{
+    height: 120px;
+    align-self: center;
+  }
+  .header-main-nav {
+    width: fit-content;
+    height: 100%;
+  }
+  
+  .header-main-nav-list li {
+    display: inline-block;
+    position: relative;
+    
+  }
+  .header-main-nav-list li a{
+    padding: 0 10px;
+    line-height: 80px;
+    color: var(--text);
+    font-weight: 500;
+    display: block;
+    height: 100%; 
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    font-family: var(--font);
+  }
+  .header-main-nav-list li a i {
+    margin-right: 8px; /* Space between the icon and text */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+.header-main-nav-list li a i.icon {
+  margin-right: 2px; /* Space between the icon and text */
+  font-size: 1.2rem; /* Adjust icon size */
+  display: none; /* Hide icons by default */
+}
+  .header-main-nav-list li a:hover{
+    background-color: var(--light-blue);
+    transform: scale(1.05);
+  }
+  .header-main-sm {
+    width: 120px;
+    height: 100%; 
+    display: flex;  
+    justify-content: center;
+  
+  }
+  .header-main-sm a {
+    color: var(--text);
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 80px;
+    font-size: 18px;    
+  }
+  
+  .header-main-sm a:hover{
+    transform: scale(1.05);
+  }
+
+  .hamburger { 
+    display: none;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background-color: var(--text);
+  }
+
+
+
+  /** Games Header starts here **/
+
+  .todays-games-container {
+    width: 100%;
+    margin:auto;
+    height: 200px;
+    position: relative;
+    background-color: green;
+    margin-top: 80px;
+
+  }
+  .todays-games-carousel {
+    width: 90%;
+    margin:auto;
+    padding: 10px; 
+  }
+  .todays-games-date-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 1.5%;
+    text-align: center;
+  }
+  .todays-games-date-board {
+    display: flex;
+    justify-content: center;
+    background-color: var(--light-red);
+    height: 30%;
+    width: 140px;
+    border-radius: 3%;
+    padding: 10px 10px;
+    line-height: 20px;
+  }
+  .todays-games-date-board p {
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .todays-games-date-board p span {
+    color: var(--text);
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .todays-games-score-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px; /** DITO */
+    width: 170px;
+    
+  }
+  .todays-games-score-box-container{
+    position: relative;
+    background: var(--container-color);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 3%;
+    font-family: "Montserrat", sans-serif;
+  }
+  .view-box-score {
+    opacity: 0.8;
+    background-color: var(--dark-blue);
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 100px;
+    padding: 5px;
+  }
+  .view-box-score a {
+    font-size: 10px;
+    color: var(--text);
+    font-weight: bold;
+  }
+
+  .view-box-score:hover{
+    background-color: var(--light-red);
+    transition: background-color 0.3s ease; 
+  }
+  hr {
+    background-color: rgb(219, 219, 219);
+    height: 1px;
+  }
+  
+  .todays-games-teams {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+  }
+  .todays-games-note {
+    padding-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    color:var(--text2);
+    display: flex;
+    justify-content: space-around;
+    font-weight: 550;
+    align-items: center;
+
+  }
+  .todays-games-note h2 {
+    font-size: 12px;
+
+  }
+  .todays-games-note p {
+    font-size: 10px;
+  }
+  .todays-games-note p span {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .todays-games-team-name {
+    font-size: 15px;
+    font-weight: 600;
+
+  }
+  .todays-games-team-score {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+  }
+  .todays-games-team-image {
+    width: 50px;
+    height: 35px;
+  }
+  .todays-games-team-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 90%;
+    object-fit: cover;
+  } 
+  .todays-games-slider-wrapper {
+    display: flex;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button {
+    height: 30px;
+    width: 30px;
+    z-index: 5;
+    color: var(--text);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background:  var(--light-blue);
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button:hover {
+    background: var(--dark-blue);
+    opacity: 1;
+  }
+  
+  .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
+    left: 150px;
+    top:50%;
+    display: none;
+    position: absolute;
+  }
+  .todays-games-slider-wrapper .todays-games-slide-button#next-slide {
+    top:50%;
+    right: 1px;
+    position: absolute;
+  }
+  .todays-games-slider-wrapper .todays-games-carousel {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 25px;
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    
+  }
+  
+
+  @media(max-width:786px){
+    .hamburger{
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 10px;
+    }
+      
+    .header-main-logo {
+      padding: 0 20px 0 20px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+      }
+      .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+      }
+      .header-main-nav-list.active{
+        right: 0;
+      }
+      .header-main-nav {
+        padding: 30px 30px;
+        background-color: var(--dark-blue);
+      }
+      .header-main-nav-list{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        right: -100%;
+        width: 100%;
+        top: 78px;
+        gap: 10px;
+        background-color: var(--dark-blue);
+        align-items: center;
+        z-index: 999;
+      }
+      .header-main-nav-list li a{
+        width: 100%;
+      }
+      .todays-games-slider-wrapper .todays-games-slide-button#prev-slide {
+        left: 0;
+      }
+
+
+    .header-main-nav-list li a i {
+        font-size: 1rem; /* Adjust icon size on mobile */
+    }
+    .header-main-nav-list li a i.icon {
+      display: inline; /* Show icons on mobile screens */
+  }
+
+  .header-main-nav-list li a {
+      font-size: 16px; /* Adjust font size on mobile */
+      
+  }
+
+  .header-main-nav-list li a i.icon {
+      font-size: 1rem; /* Adjust icon size on mobile */
+  }
+ 
+  .todays-games-slider-wrapper {
+    flex-direction: column;
+  }
+
+  .todays-games-date-container {
+    margin-top: 1%;
+
+  }
+  .todays-games-date-board {
+    height: 10%;
+    width: 90px;
+    padding: 0;
+    line-height: 18px;
+  }
+  .todays-games-date-board p {
+    font-size: 8px;
+  }
+  .todays-games-date-board p span {
+    font-size: 10px;
+    padding:0;
+  }  
+    
+  }
+
+  
