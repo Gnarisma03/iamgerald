@@ -194,8 +194,13 @@ body {
     background-color: rgb(219, 219, 219);
     height: 1px;
   }
+
+  .todays-games-header {
+    height: auto;
+   
+  }
   .todays-games-score-box-container{
-    background: green;
+    background: var(--container-color);
     height: auto;
     width: 100%;
     display: flex;
@@ -209,7 +214,6 @@ body {
   }
   .todays-games-score-box {
     width: 140px;
-  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
