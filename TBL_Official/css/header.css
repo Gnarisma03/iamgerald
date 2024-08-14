@@ -171,23 +171,21 @@ body {
     padding-bottom: 10px;
   }
 
-
   .view-box-score {
     opacity: 0.8;
-    background-color: var(--dark-blue);
-    width: 80px;
     padding: 5px;
     text-align: center;
     margin: 10px 0;
+    
   }
   .view-box-score a {
-    font-size: 8px;
-    color: var(--text);
+    font-size: 10px;
+    color: var(--light-blue);
     font-weight: bold;
   }
 
   .view-box-score:hover{
-    background-color: var(--light-red);
+    text-decoration: underline;
     transition: background-color 0.3s ease; 
   }
   hr {
@@ -199,25 +197,13 @@ body {
     height: auto;
    
   }
-  .todays-games-score-box-container{
-    background: var(--container-color);
-    height: 100%
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 5px;
-    border-radius: 5%;
-  }
   .todays-games-score-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 160px;
-    height: auto;
     border-radius: 5%;
+    background: var(--container-color);
   }
   .todays-games-note {
     display: flex;
@@ -401,8 +387,7 @@ body {
   }
 
   .todays-games-score-box {
-    width: 130px;
-    height: 120px;
+    width: 150px;
     padding: 2px;
   }
   .todays-games-date-board p {
@@ -433,14 +418,13 @@ body {
     width: 25px;
     height: 25px;
   }
-
+  
   .view-box-score a {
     font-size: 7px;
   }
 
   .view-box-score {
     opacity: 0.8;
-    width: 70px;
     margin: 2px 0;
  
   }
