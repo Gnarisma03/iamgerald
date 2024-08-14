@@ -130,7 +130,7 @@ body {
     margin:auto;
     position: relative;
     margin-top: 80px;
-    height: 180px;
+    height: auto;
 
   }
   .todays-games-carousel {
@@ -144,14 +144,15 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
-    margin-left: 1.5%;
+    margin: 5px 2px 5px 5px;
     text-align: center;
+
   }
   .todays-games-date-board {
     display: flex;
     justify-content: center;
     background-color: var(--light-red);
-    height: 80px;
+    height: auto;
     width: 140px;
     border-radius: 3%;
     padding: 10px 10px;
