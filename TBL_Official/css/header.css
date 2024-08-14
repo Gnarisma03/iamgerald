@@ -175,14 +175,13 @@ body {
   .view-box-score {
     opacity: 0.8;
     background-color: var(--dark-blue);
-    margin-top: 10px;
-    margin-left: 30px;
-    width: 100px;
+    width: 80px;
     padding: 5px;
     text-align: center;
+    margin: 5px 0;
   }
   .view-box-score a {
-    font-size: 10px;
+    font-size: 8px;
     color: var(--text);
     font-weight: bold;
   }
@@ -195,16 +194,28 @@ body {
     background-color: rgb(219, 219, 219);
     height: 1px;
   }
+  .todays-games-score-box-container{
+    background: #ffffff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5%;
+    font-family: "Montserrat", sans-serif;
+  }
   .todays-games-score-box {
     width: 140px;
-    background-color: white;
+  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 160px;
-    height: 185px;
-    padding: 5px;
-    border-radius: 2%;
+    height: 120px;
+    border-radius: 5%;
   }
   .todays-games-note {
     display: flex;
@@ -216,6 +227,7 @@ body {
   .todays-games-teams {
     display: flex;
     justify-content: space-around;
+    align-items:center;
   }
   .todays-games-note h2 {
     font-size: 12px;
@@ -239,8 +251,8 @@ body {
     font-family: "Montserrat", sans-serif;
   }
   .todays-games-team-image {
-    width: 50px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .todays-games-team-image img {
     width: 100%;
@@ -395,7 +407,7 @@ body {
 
   .todays-games-score-box {
     width: 130px;
-    height: 150px;
+    height: 120px;
     padding: 2px;
   }
   .todays-games-date-board p {
@@ -432,14 +444,16 @@ body {
     height: 25px;
   }
 
-  .view-box-score {
-    width: 80px;
-    padding: 3px;
-    text-align: center;
-  }
   .view-box-score a {
-    font-size: 8px;
+    font-size: 7px;
   }
+
+  .view-box-score {
+    opacity: 0.8;
+    width: 70px;
+    margin: 2px 0;
+  }
+
 
   .copyright {
     background-color:var(--dark-blue);
