@@ -378,10 +378,7 @@ body {
   .header-main-nav-list li a i.icon {
       font-size: 1rem; /* Adjust icon size on mobile */
   }
- 
-  .todays-games-slider-wrapper {
-    flex-direction: column;
-  }
+
 
   .todays-games-date-container {
     margin-top: 1%;
