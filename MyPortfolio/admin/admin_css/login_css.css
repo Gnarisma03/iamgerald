@@ -1,0 +1,67 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+    --color-1: #f8fafc;
+    --hover: #0369a1;
+    --hover_dark: #024a72;
+    --background-color: #f8fafc; /* Day color */
+    --text-color: #4b5563; /* Day text color */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+
+.login-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h1 {
+    color: var(--text-color);
+}
+
+.login-form .form-control {
+    border-radius: 0.25rem;
+}
+
+.login-form .btn-primary {
+    background-color: var(--hover);
+    border-color: var(--hover);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-form .btn-primary:hover {
+    background-color: var(--hover_dark);
+    border-color: var(--hover_dark);
+}
+
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid #0000;
+    border-right-color: var(--hover);
+    position: relative;
+    animation: l24 1s infinite linear;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border-radius: 50%;
+    border: inherit;
+    animation: inherit;
+    animation-duration: 2s;
+  }
+  .loader:after {
+    animation-duration: 4s;
+  }
+  @keyframes l24 {
+    100% {transform: rotate(1turn)}
+  }

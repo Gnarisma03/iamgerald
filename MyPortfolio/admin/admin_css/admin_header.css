@@ -1,0 +1,111 @@
+/* Import Poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+    --blue: #0369a1;
+    --blue_dark: #024a72; 
+    --background-color: #f8fafc;
+    --text-color1: #4b5563;
+    --text-color2: #f8fafc;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: var(--blue);
+    width: 250px;
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure sidebar is attached to the left with no gap */
+    z-index: 1000;
+}
+
+/* Sidebar link styling */
+.sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+.sidebar .nav-link:hover {
+    background-color: var(--blue_dark);
+}
+
+/* Sidebar visible state */
+.sidebar.active {
+    left: 0; /* Ensure it's fully visible */
+}
+
+/* Main content styling */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 250px; /* Adjust for the width of the sidebar */
+    transition: margin-left 0.3s ease;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue_dark);
+    border-color: var(--blue_dark);
+}
+
+/* Burger menu positioned on the right */
+#sidebarToggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1100;
+    background-color: var(--blue);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    display: none; /* Hidden by default on larger screens */
+}
+
+/* Responsive settings for smaller screens */
+@media (max-width: 768px) {
+    /* Hide sidebar off-screen */
+    .sidebar {
+        left: -250px; /* Sidebar off the screen initially */
+    }
+
+    /* Show sidebar when active */
+    .sidebar.active {
+        left: 0;
+    }
+
+    /* Main content resets to full width */
+    .main-content {
+        margin-left: 0;
+    }
+
+    /* Adjust main content when sidebar is visible */
+    .sidebar.active ~ .main-content {
+        margin-left: 250px;
+    }
+
+    /* Show burger menu on smaller screens */
+    #sidebarToggle {
+        display: block;
+    }
+}
